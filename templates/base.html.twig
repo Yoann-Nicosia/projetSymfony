@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link href="https://fonts.cdnfonts.com/css/brodies" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/butler" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+         <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link href="https://fonts.cdnfonts.com/css/urw-geometric?styles=103058,103060,103054,103056,103057,103059,103052,103053,103051,103055" rel="stylesheet">             
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+        <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+
+        {# {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+{% block importmap %}{{ importmap('app') }}{% endblock %}
+        {% endblock %} #}
+    </head>
+    {# <header>
+        <nav>    
+            <a href="/home"><img class="logo" src="{{ asset('/img/logo.png') }}"/></a>
+            <a href="/about">A propos de nous</a>
+            <a href="">Service</a>
+            <a href="">Contact</a>
+        </nav> 
+    </header> #}
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+</html>

@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Index Home{% endblock %}
+
+{% block body %}
+
+<header class="homeHeader">
+    <nav>    
+        <a href="/home"><img class="logo" src="{{ asset('/img/logo.png') }}"/></a>
+        <a href="/about">A propos de nous</a>
+        <a href="/services">Service</a>
+        <a href="/contact">Contact</a>
+    </nav> 
+    <div class="title">
+        <h1><span class="colorTitle">Crêpes</span> Tah les oufs</h1>
+        <p>Laissez-vous emporter par le tourbillon de saveurs de nos crêpes exquises</p>
+    </div>
+</header>
+
+<main>
+    <div class="presentation">
+        <div class="teamdiv teamText">
+            <h2><span class="teamWord">Notre</span> Équipe</h2>
+            <p class="presentationText">Plongez dans l'univers délectable de notre équipe de crêpier,
+            une dizaine d'experts unis pour créer des moments gourmands uniques.
+            Notre chef crêpier perfectionne l'art de la cuisson, soutenu par des
+            importateurs experts en quête des meilleurs ingrédients à travers le monde.
+            Ensemble, ils forment une équipe dynamique, prête à transformer
+            chaque occasion en une expérience culinaire mémorable. Bienvenue
+            dans notre monde, où chaque crêpe est une histoire savoureuse en soi.</p>
+        </div>
+        <div class="teamdiv teamImg"></div>
+    </div>
+    <div></div>
+    <div></div>
+</main>
+
+
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AboutController!{% endblock %}
+
+{% block body %}
+<header>
+    <nav>    
+        <a href="/home"><img class="logo" src="{{ asset('/img/logo.png') }}"/></a>
+        <a href="/about">A propos de nous</a>
+        <a href="">Service</a>
+        <a href="">Contact</a>
+    </nav> 
+</header>
+
+<div class="example-wrapper">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code><a href="{{ '/home/yoann/symfony-base-master/src/Controller/AboutController.php'|file_link(0) }}">src/Controller/AboutController.php</a></code></li>
+        <li>Your template at <code><a href="{{ '/home/yoann/symfony-base-master/templates/about/index.html.twig'|file_link(0) }}">templates/about/index.html.twig</a></code></li>
+    </ul>
+</div>
+{% endblock %}

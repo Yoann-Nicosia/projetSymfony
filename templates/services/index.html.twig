@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ServicesController!{% endblock %}
+
+{% block body %}
+
+
+<header>
+    <nav>    
+        <a href="/home"><img class="logo" src="{{ asset('/img/logo.png') }}"/></a>
+        <a href="/about">A propos de nous</a>
+        <a href="/services">Service</a>
+        <a href="/contact">Contact</a>
+    </nav> 
+    <div class="headerService">
+        <h1 class="servicesTitle"><span class="brownTitle">Crêpes</span> pour<br><span class="brownTitle">tous</span> les goûts</h1>
+    </div>
+</header>
+
+
+{% endblock %}
