@@ -15,10 +15,10 @@
         {% endblock %}
         {# <link rel="stylesheet" href="{{ asset('build/app.css') }}"> #}
 
-        {# {% block javascripts %}
+        {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
-{% block importmap %}{{ importmap('app') }}{% endblock %}
-        {% endblock %} #}
+{% block importmap %}{{ importmap('app') }}{% endblock %} 
+        {% endblock %}
     </head>
     {# <header>
         <nav>    
