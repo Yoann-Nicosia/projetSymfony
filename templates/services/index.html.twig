@@ -2,6 +2,8 @@
 
 {% block title %}Hello ServicesController!{% endblock %}
 
+
+
 {% block body %}
 
 
@@ -11,11 +13,190 @@
         <a href="/about">A propos de nous</a>
         <a href="/services">Service</a>
         <a href="/contact">Contact</a>
-    </nav> 
+    </nav>
     <div class="headerService">
         <h1 class="servicesTitle"><span class="brownTitle">Crêpes</span> pour<br><span class="brownTitle">tous</span> les goûts</h1>
+        <img id="crepeService" src="{{asset('./img/crepeService.png')}}" alt="Crêpe page service">
+        <div class="buttonsServices">
+            <button class="buttonService pursuebutton">Me laisser tenter</button>
+            <button class="buttonService backbutton">Retour à l'accueil</button>
+        </div>
+        <div class="headerProducts">
+            <img class="imageProduitHeader" src="{{ asset('/img/headerimage1.png') }}" alt="image produit 1">
+            <img class="imageProduitHeader" src="{{ asset('/img/headerimage1.png') }}" alt="image produit 2">
+            <img class="imageProduitHeader" src="{{ asset('/img/headerimage2.png') }}" alt="image produit 3">
+            <img class="imageProduitHeader" src="{{ asset('/img/headerimage3.png') }}" alt="image produit 4">
+        </div>
     </div>
-</header>
+</header>   
 
+<div class="productList">
+    <div class="productSection">
+        <h2 class="subhead"><span class="blackWord">Les</span> salées</h2>
+        
+        <div class="carrousselImg">
+            {# Carroussel image start #}
+            <div class="container">
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+            <div class="cards">
+                <label class="card" for="item-1" id="song-1">
+                <img class="carousselImg" src="{{asset('./img/crepesalee1.jpg')}}" alt="Crêpe salée 1">
+                </label>
+                <label class="card" for="item-2" id="song-2">
+                <img class="carousselImg" src="{{asset('./img/crepesalee2.jpg')}}" alt="Crêpe salée 2">
+                </label>
+                <label class="card" for="item-3" id="song-3">
+                <img class="carousselImg" src="{{asset('./img/crepesalee3.jpg')}}" alt="Crêpe salée 3">
+                </label>
+            </div>
+            <div class="player">
+                <div class="upper-part">               
+                <div class="info-area" id="test">
+                    <label class="song-info" id="song-info-1">
+                    <div class="title">Crèpe jambon</div>
+                    <div class="sub-line">
+                        <div class="subtitle">Crèpe, jambon, crème fraiche, fromage fondu</div>
+                    </div>
+                    </label>
+                    <label class="song-info" id="song-info-2">
+                    <div class="title">Crêpe jambon cru</div>
+                    <div class="sub-line">
+                        <div class="subtitle">Crèpe, jambon cru, tomates, crème fraiche</div>
+                    </div>
+                    </label>
+                    <label class="song-info" id="song-info-3">
+                    <div class="title">Crêpe roulée au poulet</div>
+                    <div class="sub-line">
+                        <div class="subtitle">Crèpe, poulet, curry, crème fraiche</div>
+                    </div>
+                    </label>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        {# Carroussel image end #}
+
+        
+
+
+    </div>
+    <div class="productSection productSection2">
+        <h2 class="subhead"><span class="blackWord">Les</span> <span class="whiteWord">gourmandes</span></h2>
+        
+        <div class="carrousselImg">
+            {# Carroussel image start #}
+            <div class="container">
+                <input type="radio" name="sliderr" id="itemm-1" checked>
+                <input type="radio" name="sliderr" id="itemm-2">
+                <input type="radio" name="sliderr" id="itemm-3">
+            <div class="cards">
+                <label class="card" for="itemm-1" id="songg-1">
+                <img class="carousselImg" src="{{asset('./img/crepesucre1.jpg')}}" alt="Crêpe salée 1">
+                </label>
+                <label class="card" for="itemm-2" id="songg-2">
+                <img class="carousselImg" src="{{asset('./img/crepesucre2.jpg')}}" alt="Crêpe salée 2">
+                </label>
+                <label class="card" for="itemm-3" id="songg-3">
+                <img class="carousselImg" src="{{asset('./img/crepesucre3.jpg')}}" alt="Crêpe salée 3">
+                </label>
+            </div>
+            <div class="playerr">
+                <div class="upper-part">               
+                <div class="info-area" id="testt">
+                    <label class="song-info" id="song-info-1">
+                    <div class="title">Crèpe roulée crème chantilly chocolat</div>
+                    <div class="sub-line">
+                        <div class="subtitle">Crèpe, coulis chocloat, crème chantilly, fraise</div>
+                    </div>
+                    </label>
+                    <label class="song-info" id="song-info-2">
+                    <div class="title">Crêpe chocolat</div>
+                    <div class="sub-line">
+                        <div class="subtitle">Crèpe, chocolat</div>
+                    </div>
+                    </label>
+                    <label class="song-info" id="song-info-3">
+                    <div class="title">Crêpe chocolat vanille</div>
+                    <div class="sub-line">
+                        <div class="subtitle">Crèpe, coulis chocloat, coulis vanille</div>
+                    </div>
+                    </label>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        {# Carroussel image end #}
+
+
+
+
+    </div>
+    <div class="productSection">
+        <h2 class="subhead"><span class="blackWord">Les</span> fruitées</h2>
+                <div class="carrousselImg">
+            {# Carroussel image start #}
+            <div class="container">
+                <input type="radio" name="sliderrr" id="itemmm-1" checked>
+                <input type="radio" name="sliderrr" id="itemmm-2">
+                <input type="radio" name="sliderrr" id="itemmm-3">
+            <div class="cards">
+                <label class="card" for="itemmm-1" id="songgg-1">
+                <img class="carousselImg" src="{{asset('./img/crepefruit1.jpg')}}" alt="Crêpe salée 1">
+                </label>
+                <label class="card" for="itemmm-2" id="songgg-2">
+                <img class="carousselImg" src="{{asset('./img/crepefruit2.jpg')}}" alt="Crêpe salée 2">
+                </label>
+                <label class="card" for="itemmm-3" id="songgg-3">
+                <img class="carousselImg" src="{{asset('./img/crepefruit3.jpg')}}" alt="Crêpe salée 3">
+                </label>
+            </div>
+            <div class="playerrr">
+                <div class="upper-part">               
+                <div class="info-area" id="testtt">
+                    <label class="song-info" id="song-info-1">
+                    <div class="title">Crèpe roulée crème chantilly chocolat</div>
+                    <div class="sub-line">
+                        <div class="subtitle">Crèpe, coulis chocloat, crème chantilly, fraise</div>
+                    </div>
+                    </label>
+                    <label class="song-info" id="song-info-2">
+                    <div class="title">Crêpe chocolat</div>
+                    <div class="sub-line">
+                        <div class="subtitle">Crèpe, chocolat</div>
+                    </div>
+                    </label>
+                    <label class="song-info" id="song-info-3">
+                    <div class="title">Crêpe chocolat vanille</div>
+                    <div class="sub-line">
+                        <div class="subtitle">Crèpe, coulis chocloat, coulis vanille</div>
+                    </div>
+                    </label>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        {# Carroussel image end #}
+    </div>
+</div>
+<footer>
+    <div class="footerSection">
+        <h3>Nos coordonées</h3>
+        <p>5 rue de la creperie, 80000 Amiens</p>
+        <p>crepe.crepe@gmail.com</p>
+    </div>
+    <div class="footerSection">
+        <h3>Nos réseaux</h3>
+        <div class="socialmedia">
+            <img src="{{asset('img/facebook.png')}}" alt="facebook">
+            <img src="{{asset('img/instagram.png')}}" alt="instagram">
+            <img src="{{asset('img/linkedin.png')}}" alt="linkedin">
+        </div>
+    </div>
+</footer>
 
 {% endblock %}

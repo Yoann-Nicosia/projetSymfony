@@ -3,22 +3,54 @@
 {% block title %}Hello AboutController!{% endblock %}
 
 {% block body %}
+
 <header>
     <nav>    
         <a href="/home"><img class="logo" src="{{ asset('/img/logo.png') }}"/></a>
         <a href="/about">A propos de nous</a>
-        <a href="">Service</a>
-        <a href="">Contact</a>
-    </nav> 
+        <a href="/services">Service</a>
+        <a href="/contact">Contact</a>
+    </nav>
 </header>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/home/yoann/symfony-base-master/src/Controller/AboutController.php'|file_link(0) }}">src/Controller/AboutController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/home/yoann/symfony-base-master/templates/about/index.html.twig'|file_link(0) }}">templates/about/index.html.twig</a></code></li>
-    </ul>
+<div class="aboutSection">
+    <div class="imgTitle">
+        <img class="aboutImg" src="{{asset('img/creperie.jpg')}}" alt="crêperie">
+        <h2 class="aboutTitle"><span class="blackWord">Notre</span> <span class="yellowWord">Histoire</span></h2>
+    </div>
+    <p class="aboutText">Fondée en 2010 par deux amis amoureux de la cuisine française, Crêpe Tah les oufs est née de la volonté de créer un lieu où la tradition des crêpes se mêle à une créativité gastronomique moderne. Au fil des années, notre équipe dévouée a perfectionné l'art de la confection de crêpes légères, moelleuses et remplies d'ingrédients frais et savoureux.</p>
 </div>
+
+<div class="aboutSection">
+    <p class="aboutText">Chez Crêpe Tah les oufs, nous croyons fermement en l'importance des ingrédients de qualité et du respect des traditions. Nous nous engageons à utiliser des produits locaux autant que possible, favorisant ainsi une économie durable et soutenant nos communautés locales. L'authenticité et la transparence sont au cœur de nos valeurs, car nous souhaitons que chaque bouchée de nos crêpes soit une expérience sincère et délicieuse.</p>
+    <div class="imgTitle">
+        <img class="aboutImg" src="{{asset('img/valeurs.jpg')}}" alt="valeurs">
+        <h2 class="aboutTitle"><span class="blackWord">Nos</span> <span class="yellowWord">Valeurs</span></h2>
+    </div>
+</div>
+
+<div class="aboutSection">
+    <div class="imgTitle">
+        <img class="aboutImg" src="{{asset('img/missions.jpg')}}" alt="mission">
+        <h2 class="aboutTitle"><span class="blackWord">Nos</span> <span class="yellowWord">Missions</span></h2>
+    </div>
+    <p class="aboutText">Notre mission est de créer des moments délicieux et inoubliables pour nos clients. Nous aspirons à être le lieu où les amis se réunissent, les familles partagent des repas chaleureux et les amoureux savourent des instants romantiques. En offrant des crêpes préparées avec passion et créativité, nous cherchons à établir une connexion sincère avec nos clients, une bouchée à la fois.</p>
+</div>
+<div class="aboutSection"></div>
+
+<footer>
+    <div class="footerSection">
+        <h3>Nos coordonées</h3>
+        <p>5 rue de la creperie, 80000 Amiens</p>
+        <p>crepe.crepe@gmail.com</p>
+    </div>
+    <div class="footerSection">
+        <h3>Nos réseaux</h3>
+        <div class="socialmedia">
+            <img src="{{asset('img/facebook.png')}}" alt="facebook">
+            <img src="{{asset('img/instagram.png')}}" alt="instagram">
+            <img src="{{asset('img/linkedin.png')}}" alt="linkedin">
+        </div>
+    </div>
+</footer>
 {% endblock %}
